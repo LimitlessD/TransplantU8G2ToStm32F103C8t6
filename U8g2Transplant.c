@@ -88,3 +88,13 @@ uint8_t u8x8_stm32_gpio_and_delay(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, vo
   }
   return 1;
 }
+
+u8g2_t InitNokia5110(void){
+	//NokiaGpioInit();
+	u8g2_t u8g2; // a structure which will contain all the data for one display
+  u8g2_Setup_pcd8544_84x48_f(&u8g2, U8G2_R0, u8x8_byte_4wire_sw_spi, u8x8_stm32_gpio_and_delay);  // init u8g2 structure
+  u8g2_InitDisplay(&u8g2); // send init sequence to the display, display is in sleep mode after this,
+  u8g2_SetPowerSave(&u8g2, 0); // wake up display
+	u8g2_ClearBuffer(&u8g2);
+	return u8g2;
+}

@@ -3,8 +3,7 @@
 void RCC_Configuration(void);
 void GPIO_Configuration(void);
 void USART_Configuration(void);
-
-uint8_t u8x8_stm32_gpio_and_delay(U8X8_UNUSED u8x8_t *u8x8, U8X8_UNUSED uint8_t msg, U8X8_UNUSED uint8_t arg_int, U8X8_UNUSED void *arg_ptr);
+u8g2_t InitNokia5110(void);
 
 int fputc(int ch,FILE *f)
 {
@@ -18,23 +17,20 @@ int main(void)
 	 u8 t = 2;
    RCC_Configuration();	//系统时钟初始化
    GPIO_Configuration();//端口初始化
-   USART_Configuration();
-	 u8g2_t u8g2; // a structure which will contain all the data for one display
-   u8g2_Setup_pcd8544_84x48_f(&u8g2, U8G2_R0, u8x8_byte_4wire_sw_spi, u8x8_stm32_gpio_and_delay);  // init u8g2 structure
-   u8g2_InitDisplay(&u8g2); // send init sequence to the display, display is in sleep mode after this,
-   u8g2_SetPowerSave(&u8g2, 0); // wake up display
+   USART_Configuration();//SerialPort Init
+	 u8g2_t NokiaScrn = InitNokia5110(); //Screen Init
 	 
-   while(1)
+   while(TRUE)
    {
-     u8g2_ClearBuffer(&u8g2);  
+       
 		 if(++t > 15)t=2;
-		 u8g2_DrawCircle(&u8g2,20,24,t,U8G2_DRAW_ALL);
-		 u8g2_DrawCircle(&u8g2,20,24,t-1,U8G2_DRAW_ALL);
-		 u8g2_DrawCircle(&u8g2,40,24,t,U8G2_DRAW_ALL);
-		 u8g2_DrawCircle(&u8g2,40,24,t-1,U8G2_DRAW_ALL);
-		 u8g2_DrawCircle(&u8g2,60,24,t,U8G2_DRAW_ALL);
-		 u8g2_DrawCircle(&u8g2,60,24,t-1,U8G2_DRAW_ALL);
-     u8g2_SendBuffer(&u8g2);  
+		 u8g2_DrawCircle(&NokiaScrn,20,24,t,U8G2_DRAW_ALL);
+		 u8g2_DrawCircle(&NokiaScrn,20,24,t-1,U8G2_DRAW_ALL);
+		 u8g2_DrawCircle(&NokiaScrn,40,24,t,U8G2_DRAW_ALL);
+		 u8g2_DrawCircle(&NokiaScrn,40,24,t-1,U8G2_DRAW_ALL);
+		 u8g2_DrawCircle(&NokiaScrn,60,24,t,U8G2_DRAW_ALL);
+		 u8g2_DrawCircle(&NokiaScrn,60,24,t-1,U8G2_DRAW_ALL);
+     u8g2_SendBuffer(&NokiaScrn);  
 		 delay_ms(50);
    }	
 }
