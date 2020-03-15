@@ -1,5 +1,4 @@
 #include "pbdata.h"
-u8 dt=0;
 
 
 void RCC_HSE_Configuration(void) //HSE作为PLL时钟，PLL作为SYSCLK 

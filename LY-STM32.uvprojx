@@ -7,7 +7,7 @@
 
   <Targets>
     <Target>
-      <TargetName>LY-STM32</TargetName>
+      <TargetName>Nokia5110U8g2</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
@@ -49,7 +49,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\</OutputDirectory>
-          <OutputName>LY-STM32</OutputName>
+          <OutputName>Nokia5110U8g2</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
@@ -134,7 +134,7 @@
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>0</UpdateFlashBeforeDebugging>
             <Capability>1</Capability>
-            <DriverSelection>4100</DriverSelection>
+            <DriverSelection>4101</DriverSelection>
           </Flash1>
           <bUseTDR>0</bUseTDR>
           <Flash2>STLink\ST-LINKIII-KEIL_SWO.dll</Flash2>
@@ -410,6 +410,11 @@
               <FileName>stm32f10x_lcddispaly.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\USR\stm32f10x_lcddispaly.c</FilePath>
+            </File>
+            <File>
+              <FileName>U8g2Transplant.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\U8g2Transplant.c</FilePath>
             </File>
           </Files>
         </Group>
