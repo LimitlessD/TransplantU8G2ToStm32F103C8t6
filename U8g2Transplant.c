@@ -1,6 +1,12 @@
 #include "pbdata.h"
 
-#define GPIOX GPIOB
+#define SCREENGPIOGROUP GPIOB
+#define SCKPIN GPIO_Pin_3
+#define DATAPIN GPIO_Pin_4
+#define DCPIN GPIO_Pin_5
+#define CEPIN GPIO_Pin_6
+#define RSTPIN GPIO_Pin_7
+
 
 
 //This Function will independtly keep the screen running by init GPIO it self
@@ -26,11 +32,11 @@ uint8_t u8x8_stm32_gpio_and_delay(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, vo
       break;							// arg_int=1: delay by 5us, arg_int = 4: delay by 1.25us
     case U8X8_MSG_GPIO_D0:				// D0 or SPI clock pin: Output level in arg_int
     //case U8X8_MSG_GPIO_SPI_CLOCK:
-			arg_int?GPIO_SetBits(GPIOB, GPIO_Pin_3):GPIO_ResetBits(GPIOB, GPIO_Pin_3);
+			arg_int?GPIO_SetBits(SCREENGPIOGROUP, SCKPIN):GPIO_ResetBits(SCREENGPIOGROUP, SCKPIN);
       break;
     case U8X8_MSG_GPIO_D1:				// D1 or SPI data pin: Output level in arg_int
     //case U8X8_MSG_GPIO_SPI_DATA:
-			arg_int?GPIO_SetBits(GPIOB, GPIO_Pin_4):GPIO_ResetBits(GPIOB, GPIO_Pin_4);
+			arg_int?GPIO_SetBits(SCREENGPIOGROUP, DATAPIN):GPIO_ResetBits(SCREENGPIOGROUP, DATAPIN);
       break;
     case U8X8_MSG_GPIO_D2:				// D2 pin: Output level in arg_int
       break;
@@ -46,14 +52,14 @@ uint8_t u8x8_stm32_gpio_and_delay(u8x8_t *u8x8, uint8_t msg, uint8_t arg_int, vo
       break;
     case U8X8_MSG_GPIO_E:				// E/WR pin: Output level in arg_int
       break;
-    case U8X8_MSG_GPIO_CS:				// CS (chip select) pin: Output level in arg_int
-			arg_int?GPIO_SetBits(GPIOB, GPIO_Pin_6):GPIO_ResetBits(GPIOB, GPIO_Pin_6);
+    case U8X8_MSG_GPIO_CS:				// CS CE (chip select) pin: Output level in arg_int
+			arg_int?GPIO_SetBits(SCREENGPIOGROUP, CEPIN):GPIO_ResetBits(SCREENGPIOGROUP, CEPIN);
       break;
     case U8X8_MSG_GPIO_DC:				// DC (data/cmd, A0, register select) pin: Output level in arg_int
-			arg_int?GPIO_SetBits(GPIOB, GPIO_Pin_5):GPIO_ResetBits(GPIOB, GPIO_Pin_5);
+			arg_int?GPIO_SetBits(SCREENGPIOGROUP, DCPIN):GPIO_ResetBits(SCREENGPIOGROUP, DCPIN);
       break;
     case U8X8_MSG_GPIO_RESET:			// Reset pin: Output level in arg_int
-			arg_int?GPIO_SetBits(GPIOB, GPIO_Pin_7):GPIO_ResetBits(GPIOB, GPIO_Pin_7);
+			arg_int?GPIO_SetBits(SCREENGPIOGROUP, RSTPIN):GPIO_ResetBits(SCREENGPIOGROUP, RSTPIN);
 			//Set/Reset Bit in OneLine
       break;
     case U8X8_MSG_GPIO_CS1:				// CS1 (chip select) pin: Output level in arg_int
