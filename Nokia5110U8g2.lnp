@@ -5,6 +5,7 @@
 ".\stm32f10x_it.o"
 ".\stm32f10x_lcddispaly.o"
 ".\u8g2transplant.o"
+".\sysinits.o"
 ".\stm32f10x_gpio.o"
 ".\stm32f10x_rcc.o"
 ".\misc.o"

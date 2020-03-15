@@ -416,6 +416,11 @@
               <FileType>1</FileType>
               <FilePath>.\U8g2Transplant.c</FilePath>
             </File>
+            <File>
+              <FileName>SysInits.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SysInits.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
