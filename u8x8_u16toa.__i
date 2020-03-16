@@ -1,6 +1,0 @@
---c99 -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I .\Lib\inc -I .\System -I .\USR -I .\csrc
--I.\RTE\_Nokia5110U8g2
--IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include
--IC:\Keil_v5\ARM\CMSIS\Include
--D__UVISION_VERSION="525" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER
--o .\u8x8_u16toa.o --omf_browse .\u8x8_u16toa.crf --depend .\u8x8_u16toa.d "csrc\u8x8_u16toa.c"
