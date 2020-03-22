@@ -1,11 +1,11 @@
 #include "pbdata.h"
 
-#define SCREENGPIOGROUP GPIOB
-#define SCKPIN GPIO_Pin_3
-#define DATAPIN GPIO_Pin_4
+#define SCREENGPIOGROUP GPIOA
+#define SCKPIN GPIO_Pin_7
+#define DATAPIN GPIO_Pin_6
 #define DCPIN GPIO_Pin_5
-#define CEPIN GPIO_Pin_6
-#define RSTPIN GPIO_Pin_7
+#define CEPIN GPIO_Pin_4
+#define RSTPIN GPIO_Pin_3
 
 
 

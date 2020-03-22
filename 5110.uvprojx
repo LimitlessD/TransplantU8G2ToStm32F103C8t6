@@ -421,6 +421,11 @@
               <FileType>1</FileType>
               <FilePath>.\SysInits.c</FilePath>
             </File>
+            <File>
+              <FileName>MenuSupport.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\MenuSupport.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

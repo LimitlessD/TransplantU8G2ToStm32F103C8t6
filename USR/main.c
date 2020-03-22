@@ -25,6 +25,6 @@ int main(void)
 		 u8g2_DrawCircle(&NokiaScrn,60,24,t,U8G2_DRAW_ALL);
 		 u8g2_DrawCircle(&NokiaScrn,60,24,t-1,U8G2_DRAW_ALL);
      u8g2_SendBuffer(&NokiaScrn);  
-		 delay_ms(50);
+		 u8g2_ClearBuffer(&NokiaScrn);
    }	
 }

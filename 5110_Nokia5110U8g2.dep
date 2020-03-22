@@ -1,6 +1,6 @@
 Dependencies for Project '5110', Target 'Nokia5110U8g2': (DO NOT MODIFY !)
 F (.\ASM\startup_stm32f10x_hd.s)(0x4D783CDE)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_Nokia5110U8g2-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 525" --pd "STM32F10X_MD SETA 1"--list .\startup_stm32f10x_hd.lst --xref -o .\startup_stm32f10x_hd.o --depend .\startup_stm32f10x_hd.d)
-F (.\USR\main.c)(0x5E6E7AB1)(--c99 -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I .\Lib\inc -I .\System -I .\USR -I .\csrc-I.\RTE\_Nokia5110U8g2-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+F (.\USR\main.c)(0x5E6F950A)(--c99 -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I .\Lib\inc -I .\System -I .\USR -I .\csrc-I.\RTE\_Nokia5110U8g2-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\main.o --omf_browse .\main.crf --depend .\main.d)
 I (USR\pbdata.h)(0x5E6E6FBA)
 I (.\System\stm32f10x.h)(0x4E2FBA56)
 I (.\System\core_cm3.h)(0x4D523B58)
@@ -89,7 +89,7 @@ I (.\csrc\u8x8.h)(0x5E5C0FD0)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (C:\Keil_v5\ARM\ARMCC\include\limits.h)(0x599ECD2A)
-F (.\U8g2Transplant.c)(0x5E6E7905)(--c99 -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I .\Lib\inc -I .\System -I .\USR -I .\csrc-I.\RTE\_Nokia5110U8g2-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\u8g2transplant.o --omf_browse .\u8g2transplant.crf --depend .\u8g2transplant.d)
+F (.\U8g2Transplant.c)(0x5E6F9407)(--c99 -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I .\Lib\inc -I .\System -I .\USR -I .\csrc-I.\RTE\_Nokia5110U8g2-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\u8g2transplant.o --omf_browse .\u8g2transplant.crf --depend .\u8g2transplant.d)
 I (.\USR\pbdata.h)(0x5E6E6FBA)
 I (.\System\stm32f10x.h)(0x4E2FBA56)
 I (.\System\core_cm3.h)(0x4D523B58)
@@ -111,7 +111,29 @@ I (.\csrc\u8x8.h)(0x5E5C0FD0)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
 I (C:\Keil_v5\ARM\ARMCC\include\limits.h)(0x599ECD2A)
-F (.\SysInits.c)(0x5E6E7AB1)(--c99 -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I .\Lib\inc -I .\System -I .\USR -I .\csrc-I.\RTE\_Nokia5110U8g2-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\sysinits.o --omf_browse .\sysinits.crf --depend .\sysinits.d)
+F (.\SysInits.c)(0x5E6F9404)(--c99 -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I .\Lib\inc -I .\System -I .\USR -I .\csrc-I.\RTE\_Nokia5110U8g2-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\sysinits.o --omf_browse .\sysinits.crf --depend .\sysinits.d)
+I (.\USR\pbdata.h)(0x5E6E6FBA)
+I (.\System\stm32f10x.h)(0x4E2FBA56)
+I (.\System\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (.\System\system_stm32f10x.h)(0x4D783CAA)
+I (.\Lib\inc\stm32f10x_conf.h)(0x49D96952)
+I (.\Lib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (.\Lib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (.\Lib\inc\misc.h)(0x4D783BB4)
+I (.\Lib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (.\Lib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (.\Lib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (.\Lib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (.\Lib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (.\USR\stm32f10x_lcddisplay.h)(0x5BDD9E92)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (.\csrc\u8g2.h)(0x5E5C0FD0)
+I (.\csrc\u8x8.h)(0x5E5C0FD0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (C:\Keil_v5\ARM\ARMCC\include\limits.h)(0x599ECD2A)
+F (.\MenuSupport.c)(0x5E6F323C)(--c99 -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I .\Lib\inc -I .\System -I .\USR -I .\csrc-I.\RTE\_Nokia5110U8g2-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\menusupport.o --omf_browse .\menusupport.crf --depend .\menusupport.d)
 I (.\USR\pbdata.h)(0x5E6E6FBA)
 I (.\System\stm32f10x.h)(0x4E2FBA56)
 I (.\System\core_cm3.h)(0x4D523B58)
